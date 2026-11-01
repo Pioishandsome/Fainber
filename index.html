@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fainber - Fabric Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <main class="container">
+
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+
+            <h1 class="name">
+                Fainber
+            </h1>
+
+            <p class="description">
+                Find the fabric of your needs.
+            </p>
+
+        </section>
+
+
+
+        <!-- Fabric Finder -->
+
+        <section class="finder">
+
+
+            <!-- Style -->
+
+            <label for="style">
+                Style
+            </label>
+
+            <input
+                type="text"
+                id="style"
+                placeholder="e.g. Gorpcore, Streetwear..."
+            >
+
+
+
+            <!-- Season -->
+
+            <label for="season">
+                Season
+            </label>
+
+            <select id="season">
+
+                <option value="">
+                    Please select your season
+                </option>
+
+                <option value="spring">
+                    Spring
+                </option>
+
+                <option value="summer">
+                    Summer
+                </option>
+
+                <option value="fall">
+                    Fall
+                </option>
+
+                <option value="winter">
+                    Winter
+                </option>
+
+            </select>
+
+
+
+            <!-- Purpose -->
+
+            <label for="purpose">
+                Purpose
+            </label>
+
+            <input
+                type="text"
+                id="purpose"
+                placeholder="e.g. Hiking, formal wear..."
+            >
+
+
+
+            <!-- Additional Requirements -->
+
+            <div class="input-group">
+
+                <label for="additional">
+                    Additional Requirements (Optional)
+                </label>
+
+                <input
+                    type="text"
+                    id="additional"
+                    placeholder="e.g. Lightweight, waterproof..."
+                >
+
+            </div>
+
+
+
+            <!-- Find Button -->
+
+            <button id="findbutton">
+                Find The Fabric
+            </button>
+
+
+
+            <!-- Recommendation Result -->
+
+            <section id="result" class="hidden">
+
+                <h2 id="fabname">
+                    Your Fabric Recommendation
+                </h2>
+
+                <p id="fabreason"></p>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
