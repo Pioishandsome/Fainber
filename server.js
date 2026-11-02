@@ -6,6 +6,10 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Fabric Finder server running on port ${PORT}`);
+});
+
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
